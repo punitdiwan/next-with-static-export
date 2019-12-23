@@ -1,0 +1,22 @@
+{
+  "name": "with-static-export",
+  "license": "MIT",
+  "dependencies": {
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "latest",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "serve": "11.2.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "preexport": "npm run build",
+    "export": "next export",
+    "prestart": "npm run export",
+    "start": "serve out"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
